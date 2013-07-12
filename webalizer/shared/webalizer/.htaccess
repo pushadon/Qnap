@@ -1,0 +1,11 @@
+AuthName "Welcome to Webalizer!  This system need to enable web server's access log . 
+If you want use this app , please login"
+AuthType Basic
+AuthUserFile /etc/shadow
+AuthGroupFile /dev/null
+
+<limit GET POST>
+require user admin
+</Limit>
+#deny from all
+
